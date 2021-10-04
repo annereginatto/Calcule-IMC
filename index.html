@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule o seu IMC</title>
+    <link rel="stylesheet" type="text/CSS" href="./style.css">
+</head>
+<body>
+    <h1>Calcule seu IMC</h1>
+    <fieldset>
+        <div class="nome">
+            <label for="nome">Insira seu nome:<br>
+                <input type="text" id="nome" name="imc" placeholder="Nome" required>
+            </label>
+        </div>
+        <br>
+        <div class="peso">
+            <label for="peso">Insira seu peso:<br>
+                <input type="number" id="peso" name="imc" placeholder="Peso (em kg)" required>
+            </label>
+        </div>
+        <br>
+        <div class="altura">
+            <label for="altura">Insira sua altura:<br>
+                <input type="number" id="altura" name="imc" placeholder="Altura (em metros)" required>
+            </label>
+        </div>
+    </fieldset>
+    <br>
+    <div class="btn">
+        <button type="submit" id="calcular" onclick="calculaIMC(peso, altura)" name="imc">Calcular IMC</button>
+        <button type="submit" id="reiniciar" onclick="reiniciar()" name="imc">Reiniciar</button>
+    </div>
+    <br>
+    <p id="resultado"></p>
+    <br><br>
+
+    <script src="./script.js"></script>
+
+    <footer>
+        <p>Desenvolvido por Anne Reginatto</p>
+        <div class="img">
+            <a href="https://www.linkedin.com/in/anne-reginatto/" target="_blank"><img id="linkedin" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"></a>
+          <a href="https://github.com/annereginatto" target="_blank"><img id="github" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"></a>
+          <a href="https://discordapp.com/users/885167937298763807/" target="_blank"><img id="discord" src="https://cdn.worldvectorlogo.com/logos/discord-6.svg"></a>
+          <a href="https://codepen.io/annereginatto" target="_blank"><img id="codepen" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png"></a>
+          <a href="malito:annereginatto@gmail.com" target="_blank"><img id="gmail" src="https://cdn.worldvectorlogo.com/logos/official-gmail-icon-2020-.svg"></a>
+        </div>
+        <br><br>
+      </footer>
+</body>
+</html>
